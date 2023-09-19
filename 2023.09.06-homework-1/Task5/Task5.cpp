@@ -1,9 +1,10 @@
-#include <iostream>
-using namespace std;
-main()
+ï»¿#include <iostream>
+int main(int argc, char* argv[])
 {
-	int v, t;
-	cin >> v >> t;
-	cout << (v * t % 109 + 109) % 109 + 1; // ïåðåìåùåíèå > -109, êðóã äëÿ ÷èñëà >0
-	return 0;
+	int v = 0;
+	int	t = 0;
+	std:: cin >> v;
+	std::cin >> t;
+	std::cout << (v * t % 109 + 109) % 109 + 1; // Ð¿ÐµÑ€ÐµÐ¼ÐµÑ‰ÐµÐ½Ð¸Ðµ > -109, ÐºÑ€ÑƒÐ³ Ð´Ð»Ñ Ñ‡Ð¸ÑÐ»Ð° >0
+	return EXIT_SUCCESS;
 } 

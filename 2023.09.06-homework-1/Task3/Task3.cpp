@@ -1,10 +1,9 @@
 #include <iostream>
-using namespace std;
-int main() // этот int относится к return 0? а ещё к чему?
+int main(int argc, char* argv[])
 {
-	long long a;
-	cin >> a;
-	cout << (a / 10) * ((a / 10) + 1) * 100 + 25;
+	long long a = 0;
+	std::cin >> a;
+	std::cout << (a / 10) * ((a / 10) + 1) * 100 + 25;
 
-	return 0;
+	return EXIT_SUCCESS;
 }

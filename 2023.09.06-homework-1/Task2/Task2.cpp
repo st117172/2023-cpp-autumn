@@ -1,12 +1,12 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <cmath>
-using namespace std;
-int main()
+int main(int argc, char* argv[])
 {
-	int n, m; // модуль n не больше 10^4
-	cin >> n;
-	m = (n - pow(10,4) - 1)/(pow(10,4) + 1); //множитель для -2: даст -1 при n<=0 и 0 при n>=1
-	cout << ((n + 1) * (abs(n) - 2*m)) / 2; // в библиотеке <stdlib> abs() только для int
-	// fabs() для double, float, long double, библиотека <cmath>
-	return 0;
+	int n = 0; 
+	int m = 0; 
+	std::cin >> n; // РјРѕРґСѓР»СЊ n РЅРµ Р±РѕР»СЊС€Рµ 10^4 = 10000
+	m = (n - 10000 - 1)/(10000 + 1); //РјРЅРѕР¶РёС‚РµР»СЊ РґР»СЏ -2: РґР°СЃС‚ -1 РїСЂРё n<=0 Рё 0 РїСЂРё n>=1
+	std::cout << ((n + 1) * (abs(n) - 2*m)) / 2; // РІ Р±РёР±Р»РёРѕС‚РµРєРµ <stdlib> abs() С‚РѕР»СЊРєРѕ РґР»СЏ int
+	// fabs() РґР»СЏ double, float, long double, Р±РёР±Р»РёРѕС‚РµРєР° <cmath>
+	return EXIT_SUCCESS;
 }

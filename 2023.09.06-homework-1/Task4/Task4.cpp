@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
-int main()
+int main(int argc, char* argv[])
 {
-	int k;
-	cin >> k;
-	cout << k << 9 << 9 - k;
-	return 0;
+	int k = 0;
+	std::cin >> k;
+	std::cout << k << 9 << 9 - k;
+	return EXIT_SUCCESS;
 }
