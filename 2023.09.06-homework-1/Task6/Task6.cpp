@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	std::cin >> b;
 	c = ((a / b) * b) + ((b / a) * a); // неполное частное 
 	c = c + ((b % a) % b) + ((a % b) % a); // остаток
-	c = c - ((a / b) * b)*(b / a); // страховка от a=b
+	c = c - ((a / b) * b) * (b / a); // страховка от a=b
 	std::cout << c;
 	return EXIT_SUCCESS;
 }
