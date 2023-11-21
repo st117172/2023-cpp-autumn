@@ -2,14 +2,14 @@
 #include<cstdlib> // для srand(...)
 #include<ctime> // для time() в srand()
 
-int* initRandomArray(int len, int mn = 0, int mx = 9); //создать массив и заполнить случ.числами
+int* initRandomArray(int len, int mn = 0, int mx = 9); // создать массив и заполнить случ.числами
 void printArray(int* a, int len); // вывести массив
 void mixArray(int* a, int n); // перемешать массив
-void swap(int& a, int& b); // поменять местами элементы
+void swap(int& a, int& b); // поменять элементы местами
 void bubbleSort(int* a, int len); // пузырьком
 void insertionSort(int* a, int len); // вставками
 void selectionSort(int* a, int len); // выбором
-void countSort(int* a, int len); // подсчётом 
+void countSort(int* a, int len); // подсчётом
 void gnomeSort(int* a, int len); // гномья
 bool isSorted(int* a, int len); // проверка на отсортированность для monkeysort (bogosort)
 void monkeySort(int* a, int len); // обезьянья (bogo/болотная)
@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	int* a = initRandomArray(n);
 	printArray(a, n);
 	std::cout << std::endl;
-	
+
 	{
 		std::cout << "bubble sort" << std::endl;
 		mixArray(a, n);
@@ -176,7 +176,7 @@ void gnomeSort(int* a, int len)
 		}
 		else
 		{
-			swap(a[i], a[i-1]);
+			swap(a[i], a[i - 1]);
 			--i;
 		}
 	}
